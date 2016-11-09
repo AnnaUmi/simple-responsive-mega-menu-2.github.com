@@ -1,0 +1,141 @@
+/*Eric Meyer's Reset CSS v2.0*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*End Reset*/
+*,*:before, *:after{
+	box-sizing: border-box;
+}
+body{
+	font-family: 'Raleway', sans-serif;
+	line-height: 1;
+}
+p{
+	padding: 15px 0;
+}
+.wrap{
+	width: 1140px;
+	margin: 0 auto;
+}
+.main-menu {
+	background: #725770;
+	color: #fff;
+	font-size: 0;
+	position: relative;
+}
+.main-menu ul li{
+	display:inline-block;
+	font-size: 16px;
+	padding: 0 15px;
+}
+.main-menu ul li a {
+	color: #fff;
+	display: block;
+	position:relative;
+	text-decoration: none;
+	padding: 20px 0;
+	border-bottom: 3px solid transparent;
+	transition-duration: .3s;
+}
+.main-menu ul li a:hover{
+	color: #fed07a;
+	border-bottom: 3px solid #fed07a;
+}
+.mega-menu {
+	display: none;
+	background-color: #fe8725;
+	left: 0;
+	position: absolute;
+	width: 100%;
+	
+}
+.mega-menu ul{
+	float: left;
+	width: 205px;
+	padding: 25px 0 10px;
+}
+
+.mega-menu ul span{
+	text-transform: uppercase;
+	padding: 0 0 10px 14px;
+	color: #725770;
+}
+.mega-menu ul img{
+	padding-top: 14px;
+}
+.mega-menu ul li a{
+	padding: 14px 0;
+}
+.acrive {
+	color: #fed07a;
+	border-bottom: 3px solid #fed07a;
+}
+
+ .mega-menu span {
+ 	display: block;
+ }
+.drop-down:hover .mega-menu{
+	display: block;
+}
+
+#toggle-menu {
+	display: block;
+	background: #725770;
+	border-bottom: 1px solid #fed07a;
+	line-height: 35px;
+	font-size: 35px;
+	padding: 10px;
+	color: #fed07a;
+	cursor: pointer;
+}
+.small-menu ul li{
+	background: #725770;
+	border-bottom: 1px solid #fed07a;
+	padding: 12px 14px;
+	transition-duration: .3s;
+}
+.small-menu ul li a {
+	text-decoration: none;
+	color: #fff;
+	
+}
+.small-menu ul li:hover {
+	background-color: #826d4d;
+}
+.displaynone {
+	display: none;
+}
+.small-menu-wrap {
+	display: none;
+}
+@media(max-width: 600px){
+	.main-menu {
+		display: none;
+	}
+	.small-menu-wrap {
+		display: block;
+	}
+}
